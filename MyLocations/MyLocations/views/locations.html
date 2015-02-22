@@ -1,0 +1,24 @@
+﻿<div ng-controller="LocationCtrl as vm">
+    <ul class="collection with-header">
+        <li class="collection-header">
+            <h3>My Locations</h3>
+        </li>
+
+        <li class="collection-item" ng-repeat="location in vm.locations track by $index">
+            <div>
+                <a><i class="left mdi-content-remove-circle"></i></a>
+                {{location.name}}
+                <a class="secondary-content">
+                    <i class="secondary-content mdi-communication-location-on"></i>
+                </a>
+            </div>
+        </li>
+    </ul>
+
+    <!--Footer-->
+    <div class="navbar navbar-fixed-bottom">
+        <a class="btn-floating btn-large waves-effect waves-light red pull-right" href="/#location">
+            <i class="mdi-content-{{vm.buttonState}}"></i>
+        </a>
+    </div>
+</div>

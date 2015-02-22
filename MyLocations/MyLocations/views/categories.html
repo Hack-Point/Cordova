@@ -1,0 +1,30 @@
+﻿<div class="row" ng-controller="CategoriesListCtrl as vm">
+    <ul class="collection with-header">
+        <li class="collection-header" >
+            <div class="input-field">
+                <input id="icon_prefix" type="text" class="validate"
+                       ng-model="vm.categoryName" ui-enter="alert(1)">
+            </div>
+        </li>
+
+        <li class="collection-item" ng-repeat="category in vm.categories track by $index">
+            <div>
+                <a ng-click="vm.deleteItem(category)">
+                    <i class="left mdi-content-remove-circle"></i>
+                </a>
+                {{category.name}}
+                <a class="secondary-content" ng-click="vm.edit(category)">
+                    <i class="secondary-content mdi-editor-mode-edit"></i>
+                </a>
+            </div>
+        </li>
+    </ul>
+
+    <!--Footer-->
+    <div class="navbar navbar-fixed-bottom">
+        <a class="btn-floating btn-large waves-effect waves-light red pull-right" ng-click="vm.addNew()">
+            <i class="mdi-content-{{vm.buttonState}}"></i>
+        </a>
+    </div>
+
+</div>

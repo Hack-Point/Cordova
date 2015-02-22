@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html ng-app="spa">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MyLocations</title>
+    <!-- MyLocations references -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/prism.css" rel="stylesheet" />
+    <link href="css/ghpages-materialize.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <div ng-cloack>
+        <ui-header></ui-header>
+        <div ui-view></div>
+    </div>
+
+    <!--app bootstrap-->
+    <script src="cordova.js"></script>
+    <script src="js/vendors/jquery/jquery-2.1.3.min.js"></script>
+    <script src="js/vendors/underscore/underscore.min.js"></script>
+    <script src="js/bootstrap-app.js"></script>
+
+    <!--angular-->
+    <script src="js/vendors/angular/angular.min.js"></script>
+    <script src="js/vendors/angular/angular-animate.min.js"></script>
+    <script src="js/vendors/angular/angular-ui-router.min.js"></script>
+    <script src="js/vendors/angular/angular-touch.min.js"></script>
+    <script src="js/vendors/angular/angular-aria.min.js"></script>
+    <script src="js/vendors/angular/angular-local-storage.js"></script>
+
+    <!--Bootstrap-->
+    <script src="js/vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="js/vendors/materialize/prism.js"></script>
+    <script src="js/vendors/materialize/jquery.timeago.min.js"></script>
+    <script src="js/vendors/materialize/materialize.js"></script>
+    <script src="js/vendors/materialize/init.js"></script>
+
+    <!--app-->
+    <script src="js/setup.js"></script>
+    <script src="js/bootstrap-app.js"></script>
+    <script src="js/routes.js"></script>
+
+    <!--directives-->
+    <script src="js/directives/ui-header.js"></script>
+    <script src="js/directives/ui-enter.js"></script>
+    <script src="js/directives/html-title.js"></script>
+
+    <!--services-->
+    <script src="js/services/dbService.js"></script>
+
+    <!--controllers-->
+    <script src="js/controllers/categories-list-controller.js"></script>
+    <script src="js/controllers/locations-list-controller.js"></script>
+</body>
+</html>

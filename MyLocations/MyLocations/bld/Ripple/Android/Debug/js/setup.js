@@ -1,0 +1,1 @@
+﻿var spa = angular.module('spa', ['ui.router', 'LocalStorageModule', 'ngTouch']);
