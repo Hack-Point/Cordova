@@ -1,10 +1,5 @@
 ﻿<div>
-    <a class='dropdown-button btn' href='#' data-activates='dropdown1'>{{linkText}}</a>
-
-    <!-- Dropdown Structure -->
-    <ul id='dropdown1' class='dropdown-content'>
-        <li ng-repeat="i in dataSource">
-            <a href="#!">{{i.text}}</a>
-        </li>
-    </ul>
+    <h5>Selected item is : {{selectedItem.name}}</h5>
+    <select ng-model="selectedItem" required
+            ng-options="item.name for item in datasource" style="display: block!important;"></select>
 </div>

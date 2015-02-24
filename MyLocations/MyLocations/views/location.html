@@ -1,5 +1,5 @@
-﻿<div class="row">
-    <form class="col s12">
+﻿<div class="row" ng-controller="LocationCtrl as vm" style="padding: 30px 0 ">
+    <form>
         <div class="row">
             <div class="input-field col s12">
                 <input id="location-name" type="text" class="validate" required>
@@ -17,16 +17,22 @@
                 <input id="coordinates" type="text" class="validate" required>
                 <label for="coordinates">Location</label>
             </div>
+
+           
         </div>
 
         <div class="row">
-            <div ui-data-source="vm.categories" ui-dropdown></div>
+            <ui-dropdown link-text="Categories" datasource="vm.categories" required />
         </div>
 
         <div class="navbar navbar-fixed-bottom">
             <div class="container">
-                <a class="waves-effect waves-light btn-large">
+                <button class="waves-effect waves-light btn-large pull-left" type="submit">
                     <i class="mdi-content-create right"></i>Save
+                </button>
+
+                <a class="waves-effect waves-light btn-large pull-right" ng-href="/#locations">
+                    <i class="mdi-content-clear right"></i>Clear
                 </a>
             </div>
         </div>

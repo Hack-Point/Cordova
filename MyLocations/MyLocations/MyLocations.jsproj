@@ -110,6 +110,10 @@
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="js\controllers\location-controller.js" />
+    <Content Include="js\directives\ui-map.js" />
+    <Content Include="js\services\sqlService.js" />
+    <Content Include="js\vendors\gmaps\gmaps.js" />
     <Content Include="plugins\com.msopentech.websql\.fetch.json" />
     <Content Include="plugins\com.msopentech.websql\License.txt" />
     <Content Include="plugins\com.msopentech.websql\package.json" />
@@ -215,7 +219,6 @@
     <Content Include="js\bootstrap-app.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\controllers\categories-list-controller.js" />
-    <Content Include="js\controllers\category-create-controller.js" />
     <Content Include="js\controllers\locations-list-controller.js" />
     <Content Include="js\cordova-setup.js" />
     <Content Include="js\directives\html-title.js" />
@@ -1088,7 +1091,6 @@
     <Content Include="plugins\org.apache.cordova.device\www\device.js" />
     <Content Include="plugins\org.apache.cordova.splashscreen\www\splashscreen.js" />
     <Content Include="plugins\org.apache.cordova.vibration\www\vibration.js" />
-    <Content Include="scripts\index.js" />
     <Content Include="scripts\platformOverrides.js" />
     <Content Include="res\icons\android\icon-36-ldpi.png" />
     <Content Include="res\icons\android\icon-48-mdpi.png" />
