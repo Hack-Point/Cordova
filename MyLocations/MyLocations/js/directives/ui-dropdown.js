@@ -6,12 +6,13 @@
         tranclude: true,
         scope: {
             linkText: '@',
-            datasource: '=',
+            datasource: '='
         },
         link: function (scope, element, attrs) {
-            scope.$watch('seletedItem', function(newVal) {
-                scope.selectedItem = newVal;
-                console.log(newVal);
+            scope.$watch(angular.bind(scope, function (name) {
+                return scope.selectedItem;
+            }), function (current, original) {
+                scope.$emit('select.item.changed', current);
             });
         }
     }

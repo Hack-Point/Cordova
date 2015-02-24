@@ -2,23 +2,21 @@
     <form>
         <div class="row">
             <div class="input-field col s12">
-                <input id="location-name" type="text" class="validate" required>
+                <input id="location-name" type="text" class="validate" required ng-model="vm.name">
                 <label for="location-name">Location Name</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input id="address" type="text" class="validate" required>
+                <input id="address" type="text" class="validate" required ng-model="vm.address">
                 <label for="address">Address</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input id="coordinates" type="text" class="validate" required>
+                <input id="coordinates" type="text" class="validate" required ng-model="vm.coordinates">
                 <label for="coordinates">Location</label>
             </div>
-
-           
         </div>
 
         <div class="row">
@@ -27,7 +25,7 @@
 
         <div class="navbar navbar-fixed-bottom">
             <div class="container">
-                <button class="waves-effect waves-light btn-large pull-left" type="submit">
+                <button class="waves-effect waves-light btn-large pull-left" type="submit" ng-click="vm.save(vm)">
                     <i class="mdi-content-create right"></i>Save
                 </button>
 

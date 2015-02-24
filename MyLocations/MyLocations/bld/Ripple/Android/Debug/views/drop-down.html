@@ -1,0 +1,8 @@
+﻿<a class='dropdown-button btn' href='#' data-activates='dropdown1'>Categories</a>
+
+<!-- Dropdown Structure -->
+<ul id='dropdown1' class='dropdown-content'>
+    <li ng-repeat="c in vm.categories">
+        <a href="#/location/{{c.id}}">{{c.name}}</a>
+    </li>
+</ul>
