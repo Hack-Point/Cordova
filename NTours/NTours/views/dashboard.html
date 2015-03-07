@@ -1,0 +1,66 @@
+﻿<ion-view title="Page 1" hide-back-button="true">
+    <ion-content>
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true" does-continue="true">
+            <ion-slide>
+                <div class="box">
+                    <img ng-src="images/img1.jpg" style="margin: 0 auto; width: 100%; height: 200px; display: inline-block;" />
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box">
+                    <img ng-src="images/img2.jpg" style="margin: 0 auto; width: 100%; height: 200px; display: inline-block;" />
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box">
+                    <img ng-src="images/img3.jpg" style="margin: 0 auto; width: 100%; height: 200px; display: inline-block;" />
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box">
+                    <img ng-src="images/img4.jpg" style="margin: 0 auto; width: 100%; height: 200px; display: inline-block;" />
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box">
+                    <img ng-src="images/img5.jpg" style="margin: 0 auto; width: 100%; height: 200px; display: inline-block;" />
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="list" style="direction: rtl">
+            <div class="item item-divider dark-bg light">
+                בחר סוג חופשה
+            </div>
+
+            <a class="item item-icon-left item-icon-right" href="#/search-in-world">
+                <i class="icon ion-arrow-left-b"></i>
+                מיוחדים שלנו
+                <i class="icon ion-nuclear"></i>
+            </a>
+
+            <a class="item item-icon-left item-icon-right" href="#">
+                <i class="icon ion-arrow-left-b"></i>
+                חבילות נופש
+                <i class="icon ion-ios7-box"></i>
+            </a>
+
+            <a class="item item-icon-left item-icon-right" href="#">
+                <i class="icon ion-arrow-left-b"></i>
+                טיסות סדירות
+                <i class="icon ion-paper-airplane"></i>
+            </a>
+
+            <a class="item item-icon-left item-icon-right" href="#">
+                <i class="icon ion-arrow-left-b"></i>
+                מלונות בעולם
+                <i class="icon ion-ios7-home-outline"></i>
+            </a>
+
+            <a class="item item-icon-left item-icon-right" href="#">
+                <i class="icon ion-arrow-left-b"></i>
+                מלונות שלנו
+                <i class="icon ion-ios7-home"></i>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
